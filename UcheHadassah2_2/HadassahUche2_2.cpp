@@ -7,10 +7,16 @@ using namespace std;
 int power(double, int);//Function Prototype
 int main()
 {
-
+	cout << power(2, 3);
 	return 0;
 }
-int power(double, int)
+int power(double x, int n)
 {
-
+	double Power = 1.0;
+	while (n > 0)
+	{
+		Power *= x;
+		n--;
+	}
+	return Power;
 }
