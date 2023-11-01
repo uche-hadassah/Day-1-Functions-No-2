@@ -7,7 +7,13 @@ using namespace std;
 int power(double, int);//Function Prototype
 int main()
 {
-	cout << power(2, 3);
+	double Num;
+	int Pow;
+	cout << "Enter the number: ";
+	cin >> Num;
+	cout << "Enter the power:";
+	cin >> Pow;
+	cout << Num << "^" << Pow << " is " << power(Num, Pow) << endl;
 	return 0;
 }
 int power(double x, int n)
